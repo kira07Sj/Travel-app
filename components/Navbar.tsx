@@ -14,7 +14,7 @@ import 'aos/dist/aos.css'
 const Navbar = () => {
 
   useEffect(()=>{
-    Aos.init({duration: 1500})
+    Aos.init({duration: 2000})
 },[])
 
   const [open, setOpen] = useState(false);
@@ -25,7 +25,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="flexBetween max-container items-center padding-container relative z-30 py-5">
+    <nav className="flexBetween max-container items-center
+     padding-container relative z-30 py-5 ">
       <Link href="/">
         <Image src="/hilink-logo.svg" alt="logo" width={74} height={29} />
       </Link>
@@ -57,15 +58,16 @@ const Navbar = () => {
         width={32}
         height={32}
         alt={open ? "close menu" : "open menu"}
-        className="inline-block cursor-pointer lg:hidden"
+        className="inline-block cursor-pointer lg:hidden fixed
+        right-8 z-[25]"
         onClick={handleToggle} // Toggle the menu on click
       />
 
       {/* Mobile Menu */}
       {open && (
-        <div className="absolute lg:hidden flex 
-        flex-col w-full top-14 right-0
-         bg-gray-10" data-aos='fade-down'>
+        <div className="fixed lg:hidden flex 
+        flex-col w-full top-0 right-0 bg-white
+         " data-aos='fade-down' data-aos-duration='500'>
           <ul className="h-full flex flex-col">
             {NAV_LINKS.map((link) => (
               <Link
