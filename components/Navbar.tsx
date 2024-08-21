@@ -66,14 +66,14 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {open && (
         <div className="fixed lg:hidden flex 
-        flex-col w-full top-0 right-0 bg-white
+        flex-col w-full top-0 right-0 backdrop-blur-lg
          " data-aos='fade-down' data-aos-duration='500'>
           <ul className="h-full flex flex-col">
             {NAV_LINKS.map((link) => (
               <Link
                 href={link.href}
                 key={link.key}
-                className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 my-5 transition-all hover:font-bold"
+                className="bold-16 text-black flexCenter cursor-pointer pb-1.5 my-5 transition-all hover:font-bold"
                 onClick={() => setOpen(false)} // Close the menu on link click
               >
                 {link.label}
