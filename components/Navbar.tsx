@@ -53,15 +53,17 @@ const Navbar = () => {
       </div>
 
       {/* Menu/Close Icon for Mobile */}
+      <div className="fixed right-8 z-[25] flex 
+      justify-center items-center bg-white rounded-full">
       <Image
         src={open ? "/close.png" : "/menu.svg"} // Change icon based on open state
         width={32}
         height={32}
         alt={open ? "close menu" : "open menu"}
-        className="inline-block cursor-pointer lg:hidden fixed
-        right-8 z-[25]"
+        className="inline-block cursor-pointer lg:hidden m-3"
         onClick={handleToggle} // Toggle the menu on click
       />
+      </div>
 
       {/* Mobile Menu */}
       {open && (

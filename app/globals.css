@@ -156,3 +156,8 @@ body {
   scrollbar-width: none; /* Firefox */
 }
 
+.xxs-card{
+  @media (max-width:310px) {
+    scale: .8;
+  }
+}

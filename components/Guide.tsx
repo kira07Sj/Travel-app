@@ -45,7 +45,7 @@ const Guide = () => {
 
           <div className=" absolute max-sm:-top-5 flex flex-row bg-white py-8
            pl-7 pr-7 gap-3 rounded-3xl border shadow-md md:left-[5%]
-           lg: top-20">
+           lg: top-20 xxs-card">
             <Image src="/meter.svg" width={16} height={158}
              alt="meter" className="-mt-2" />
             <div className="flex flex-col gap-6">

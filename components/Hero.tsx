@@ -71,7 +71,7 @@ const Hero = () => {
       </div>
 
       <div className=" relative flex flex-1 items-center 
-       -mt-10 " data-aos="fade-down">
+       -mt-10 xxs-card" data-aos="fade-down">
         <div className=" relative z-20
          flex-col gap-8 rounded-3xl bg-green-90 
          px-7 py-10 ">
