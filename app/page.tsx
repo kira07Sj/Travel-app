@@ -4,7 +4,6 @@ import Guide from "@/components/Guide";
 import Features from "@/components/Features";
 import Getapp from "@/components/GetApp";
 
-
 export default function Home() {
   return (
    <>

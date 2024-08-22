@@ -12,7 +12,7 @@ const Features = () => {
 },[])
 
   return (
-    <section className='border-2 border-blue-700 max-conatiner padding-container
+    <section className=' max-conatiner padding-container
     flex-col flexCenter overflow-hidden bg-feature-bg
      bg-no-repeat py-24'>
       <div className='max-conatiner 
